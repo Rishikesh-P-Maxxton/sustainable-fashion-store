@@ -1,0 +1,26 @@
+.hori-padd {
+    padding: 30px 35px;
+}
+
+.hero-section {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.hero-jumbotron {
+    padding: 30px; /* Padding for the jumbotron content */
+    text-align: left; /* Center text within the jumbotron */
+    align-content: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 15px; /* Space below images on mobile */
+}
+
+.image-container img {
+    width: 100%; /* Make images responsive and fill their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Optional: limit image height */
+    object-fit: cover; /* Ensure the image covers the container */
+}

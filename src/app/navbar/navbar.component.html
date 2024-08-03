@@ -1,0 +1,47 @@
+<!-- brand-text.component.html -->
+<div class="brand-text bg-white py-2">
+  <a routerLink="home">
+    <img src="assets/Logo.png" alt="Exos">
+  </a>
+</div>
+
+<!-- navbar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top sticky-top-custom ">
+  <div class="container">
+    <!-- Navbar Toggler for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav-wrapper">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="404" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Art Of Living
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="404">Lifestyle</a></li>
+              <li><a class="dropdown-item" routerLink="404">Books and Stationary</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="404">Travels</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="nav-link login-link" routerLink="login" >Login</a>
+      </div>
+    </div>
+  </div>
+</nav>

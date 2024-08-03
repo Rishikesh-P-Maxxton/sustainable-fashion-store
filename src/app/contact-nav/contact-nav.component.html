@@ -1,0 +1,25 @@
+<!-- app-tabs.component.html -->
+<div class="container">
+    <div class="tabs-container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" id="contact-tab" 
+          
+          [routerLink]="[{ outlets: { contactPage: ['contactus'] } }]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          
+          > Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="faqs-tab" 
+         
+          [routerLink]="[{ outlets: { contactPage: ['faq'] } }]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >FAQs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <router-outlet name="contactPage"></router-outlet>

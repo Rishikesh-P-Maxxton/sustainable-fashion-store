@@ -1,0 +1,20 @@
+<!-- <div class="card-wrapper">
+    <div class="card">
+      <div class="card-body">
+        <img src="assets/hero3_1.png" alt="Product Image">
+        <h5 class="card-title">Product Name</h5>
+        <p class="card-text">A subtle subtitle that suits the card some random bullshit</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-body">
+        <ng-content select="[cardImage]"></ng-content>
+        <ng-content select="[cardTitle]"></ng-content>
+        <ng-content select="[cardText]"></ng-content>
+      </div>
+    </div>
+  </div>
+  

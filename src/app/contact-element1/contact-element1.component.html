@@ -1,0 +1,52 @@
+<div class="container my-5">
+  <div class="row">
+    <section class="jumbotron con1">
+      <h3 class="display-4 ">Contact Us</h3>
+      <p class="lead">Choose your preferred method of contact to connect with our customer service team or find more information with our FAQs</p>
+    </section>
+  </div>
+  <div class="row g-3 con2">
+    <!-- First Section: Call Us -->
+    <div class="col-md-4">
+      <div class="jumbotron custom-jumbotron">
+        <h1 class="jumbotron-title">Call Us</h1>
+        <p class="jumbotron-subtitle">
+          Monday To Saturday: 10am - 7pm 
+        </p>
+        <button class="btn custom-btn" (click)="makeCall()" >123-456-7890</button>
+      </div>
+    </div>
+    <!-- Second Section: Email Us -->
+    <div class="col-md-4">
+      <div class="jumbotron custom-jumbotron">
+        <h1 class="jumbotron-title">Email Us</h1>
+        <p class="jumbotron-subtitle">
+          Our client advisors will be delighted to answer your questions
+        </p>
+        <button class="btn custom-btn" (click)="makemail()">Email Us</button>
+      </div>
+    </div>
+    <!-- Third Section: Messages -->
+    <div class="col-md-4">
+      <div class="jumbotron custom-jumbotron">
+        <h1 class="jumbotron-title">Message Us</h1>
+        <p class="jumbotron-subtitle">
+          Our Client Services. You can get in touch with our Assiociate.
+        </p>
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn custom-btn mb-2">WhatsApp</button>
+          <button class="btn custom-btn">I Messages</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+    <div class="row">
+      <section class="jumbotron j1">
+        <h5 class="display-4 ">Or Meet Us!</h5>
+        <p class="lead">Office in Tokyo, Japan</p>
+      </section>
+    </div>
+<app-map-link></app-map-link>
+

@@ -1,0 +1,93 @@
+/* General Styles */
+.container{
+   
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: #f8f8f8; /* Slightly beige-white background */
+    border-radius: 0; /* No rounded corners for the container */
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    padding: 20px;
+ /* Blue background for the jumbotron */
+    color: rgb(27, 27, 27); /* White text color */
+    margin-bottom: 30px;
+    border-radius: 0; /* No rounded corners */
+   
+}
+
+
+
+.lead {
+    font-size: 1.25rem; /* Slightly larger than normal text */
+}
+
+/* Card Styles */
+.card {
+    background-color: #ededed; /* White background for the card */
+
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* No shadow */
+    padding: 0 30px;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px; /* Slight padding on both sides */
+    border: 1px solid #ccc;
+    box-shadow: none; /* Remove shadow */
+    border-radius: 0; /* No rounded corners */
+    font-size: 1rem;
+    background-color: #fff; /* White background for input fields */
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 10px 15px; /* Slight padding on both sides */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* Remove shadow */
+    display: block;
+}
+
+.btn-submit:disabled {
+    background-color: #c0c0c0;
+}
+
+/* Form Output */
+.form-output {
+    margin-top: 20px;
+}

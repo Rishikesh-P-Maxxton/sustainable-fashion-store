@@ -1,0 +1,53 @@
+/* Scoped CSS for the review component */
+
+/* Container for review cards */
+.review-section .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+.review-section .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0.125rem; /* Space between rows (2px in rem) */
+    padding-right: 0.125rem; /* Space between rows (2px in rem) */
+}
+  
+/* Style for review cards */
+.review-section .review-card {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 0; /* Remove border radius for sharp corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    padding: 1rem; /* Padding inside the card */
+    background-color: #f8f9fa; /* Default background color */
+}
+  
+/* Hover effect for review cards */
+.review-section .review-card:hover {
+    background-color: #e9ecef; /* Slightly darker background color on hover */
+}
+  
+/* Styling for review text */
+.review-section .review-text {
+    font-family: 'Arial', sans-serif; /* Arial font */
+    font-weight: 300; /* Light font weight */
+    color: #333; /* Dark text color */
+    font-size: 1rem; /* Font size for review text */
+    margin-bottom: 0.5rem; /* Space between text and name */
+}
+  
+/* Styling for review name */
+.review-section .review-name {
+    font-family: 'Arial', sans-serif; /* Arial font */
+    font-weight: 300; /* Light font weight */
+    color: #777; /* Lighter text color */
+    font-size: 0.875rem; /* Font size for review name */
+}
+  
+/* Adjust spacing between cards */
+.review-section .col-md-3 {
+    padding-left: 0.125rem; /* Space between cards (2px in rem) */
+    padding-right: 0.125rem; /* Space between cards (2px in rem) */
+}
+
+

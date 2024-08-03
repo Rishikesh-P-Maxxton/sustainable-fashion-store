@@ -1,0 +1,47 @@
+<!-- <h1 class="d-flex justify-content-center mt-3 mb-5 text-white bg-black ms-5 me-5 p-3 rounded text-center">
+    Reviews
+  </h1>
+  
+  <div class="container">
+    <table class="table table-striped table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let review of reviews">
+          <td>{{ review.name }}</td>
+          <td>{{ review.review }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   -->
+   <div class="review-section">
+    <div class="container my-5">
+        <div class="row">
+          <section class="jumbotron">
+            <h4 class="display-3">Don't Just Take Our Word For It</h4>
+            <p class="lead">
+            Hear directly from our customers about how our sustainable fashion is making a difference.
+            </p>
+          </section>
+        </div>
+      </div>
+      
+  
+    <div class="container">
+      <div class="row">
+        <!-- Limit the number of reviews shown to 8 and display 4 cards per row -->
+        <div class="col-md-3 mb-4" *ngFor="let review of reviews | slice:0:8">
+          <div class="review-card">
+            <p class="review-text">{{ review.review }}</p>
+            <h5 class="review-name text-muted">- {{ review.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

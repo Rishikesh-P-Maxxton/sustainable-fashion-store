@@ -1,0 +1,47 @@
+.card-wrapper {
+    display: inline-block; /* Align cards horizontally */
+    margin-right: 15px; /* Space between cards */
+  }
+  
+  .card {
+    width: 316px; /* Increased width to accommodate image and padding */
+    height: 530px; /* Increased height to accommodate image and padding */
+    border: none;
+    background-color: #fff; /* Set a background color to ensure readability */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure content does not overflow */
+     /* Optional shadow for better visibility */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px; /* Padding around the content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+  }
+  
+  .card img {
+    width: 300px; /* Fixed width for the image */
+    height: 416px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Remove any unwanted space below the image */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin: 5px 0; /* Margin for spacing */
+    font-size: 1.25rem; /* Font size */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow with ellipsis */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .card-text {
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow with ellipsis */
+  }
+  

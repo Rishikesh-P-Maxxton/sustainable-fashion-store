@@ -1,0 +1,77 @@
+<!-- Jumbotron Title Outside the Grid -->
+<div class="container bg-white">
+  <div class="jumbotron text-left">
+      <h1 class="display-5">Welcome to Exos Fashion</h1>
+      <p class="lead">Join us for the latest in sustainable fashion. Sign up today!</p>
+  </div>
+</div>
+
+<!-- Grid Row -->
+<div class="container bg-white">
+  <section class="row">
+      <!-- Form Column (First 8 Columns) -->
+      <section class="col-md-8">
+          <div class="card">
+              <div class="card-body">
+                  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate>
+                      <div class="form-group">
+                          <input class="form-control" formControlName="name" type="text" placeholder="Name">
+                          <div *ngIf="signupForm.controls['name'].invalid && (signupForm.controls['name'].dirty || signupForm.controls['name'].touched)" class="error-message">
+                              Name is required.
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control" formControlName="email" type="email" placeholder="Email">
+                          <div *ngIf="signupForm.controls['email'].invalid && (signupForm.controls['email'].dirty || signupForm.controls['email'].touched)" class="error-message">
+                              <div *ngIf="signupForm.controls['email'].errors?.['required']">Email is required.</div>
+                              <div *ngIf="signupForm.controls['email'].errors?.['email']">Invalid email format.</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control" formControlName="password" type="password" placeholder="Password">
+                          <div *ngIf="signupForm.controls['password'].invalid && (signupForm.controls['password'].dirty || signupForm.controls['password'].touched)" class="error-message">
+                              <div *ngIf="signupForm.controls['password'].errors?.['required']">Password is required.</div>
+                              <div *ngIf="signupForm.controls['password'].errors?.['minlength']">Password must be at least 6 characters long.</div>
+                              <div *ngIf="signupForm.controls['password'].errors?.['pattern']">Password must contain at least one letter and one number.</div>
+                          </div>
+                      </div>
+
+                      <!-- Gender Radios (Uncommented and added)
+                      <div class="form-group">
+                          <div class="radio-group">
+                              <label>
+                                  <input type="radio" formControlName="gender" value="male"> Male
+                              </label>
+                              <label>
+                                  <input type="radio" formControlName="gender" value="female"> Female
+                              </label>
+                              <label>
+                                  <input type="radio" formControlName="gender" value="other"> Other
+                              </label>
+                          </div>
+                          <div *ngIf="signupForm.controls['gender'].invalid && (signupForm.controls['gender'].dirty || signupForm.controls['gender'].touched)" class="error-message">
+                              Gender is required.
+                          </div>
+                      </div> -->
+
+                      <!-- Submit Button -->
+                      <button type="submit" [disabled]="signupForm.pristine || signupForm.invalid" class="btn-submit">
+                          Submit
+                      </button>
+                  </form>
+                  <p class="lead">Don't have an account? <a class="lead" routerLink="../signup">Create Now</a></p>
+                  <br>
+                  <div class="form-output">
+                      <p>Form value: {{ signupForm.value | json }}</p>
+                      <p>Form status: {{ signupForm.status | json }}</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Empty Column (Last 4 Columns) -->
+      <section class="col-md-4">
+          <!-- This column is intentionally left empty -->
+      </section>
+  </section>
+</div>

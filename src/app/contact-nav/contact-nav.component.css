@@ -1,0 +1,43 @@
+/* app-tabs.component.css */
+.container {
+    display: flex;
+    justify-content: flex-end; /* Align tabs to the right */
+    padding: 0;
+  }
+  
+  .tabs-container {
+    margin-top: 20px; /* Optional: Adjust as needed */
+  }
+  
+  .nav-tabs {
+    border-bottom: none; /* Remove default bottom border */
+    display: flex;
+    gap: 2px; /* Space between tabs */
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-link {
+    font-family: 'Arial', sans-serif; /* Arial font */
+    font-weight: 300; /* Light font weight */
+    color: #6c757d; /* Slightly darker beige for inactive tabs */
+    background-color: #f8f9fa; /* Light background color */
+    border: none; /* Remove default border */
+    border-radius: 0; /* Remove default border radius */
+    padding: 10px 20px; /* Padding around text */
+    text-align: center; /* Center align text */
+    transition: color 0.2s ease, background-color 0.2s ease; /* Smooth color and background color transition */
+  }
+  
+  .nav-link.active {
+    color: #343a40; /* Darker text color for active tab */
+    background-color: #e9ecef; /* Slightly darker background for active tab */
+  }
+  
+  .nav-link:hover {
+    color: #343a40; /* Darker text color on hover */
+    background-color: #e2e6ea; /* Light grey background on hover */
+  }
+  

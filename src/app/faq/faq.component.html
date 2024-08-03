@@ -1,0 +1,48 @@
+
+   <div class="container con1">
+    <div class="jumbotron text-left p-4">
+      <h4 class="display-6">Frequently Asked Question</h4>
+      <p class="lead">Need Help? Explore Our Answers to Frequently Asked Questions </p>
+    </div>
+   </div>
+<div class="container ">
+  <div class="row">
+    <!-- First column: Accordion -->
+    <div class="col-md-8 space">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+          <h2 class="accordion-header" [id]="'heading' + i">
+            <button class="accordion-button collapsed" 
+                    type="button" 
+                    [attr.data-bs-toggle]="'collapse'"
+                    [attr.data-bs-target]="'#collapse' + i" 
+                    aria-expanded="false" 
+                    [attr.aria-controls]="'collapse' + i">
+              {{item.title}}
+            </button>
+          </h2>
+          <div [id]="'collapse' + i" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>{{item.body}}</strong> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second column: Content -->
+    <div class="col-md-4">
+      <!-- Add content for the second column here -->
+      <div >
+        <div class="jumbotron custom-jumbotron">
+          <h1 class="jumbotron-title">Contact Us</h1>
+          <p class="jumbotron-subtitle">
+            Different Ways To Contact Us, Phone, Email Or Reach Us!
+          </p>
+          <button class="btn custom-btn" routerLink="/contact">Email Us</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

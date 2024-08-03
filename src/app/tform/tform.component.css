@@ -1,0 +1,87 @@
+/* General Styles */
+.container {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: #f8f8f8; /* Slightly beige-white background */
+    border-radius: 0; /* No rounded corners for the container */
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    padding: 20px;
+    color: rgb(27, 27, 27); /* Dark text color */
+    margin-bottom: 30px;
+    border-radius: 0; /* No rounded corners */
+    background-color: transparent; /* No background color */
+}
+
+.display-5 {
+    font-size: 2.5rem; /* Adjust font size for the jumbotron text */
+}
+
+/* Card Styles */
+.card {
+    background-color: #f8f8f8; /* Light beige background for the card */
+    border-radius: 0; /* No rounded corners */
+    border: 0;
+    box-shadow: none; /* No shadow */
+    padding: 30px; /* Padding around the card content */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%; /* Full width of the parent container */
+    max-width: 400px; /* Adjust this to match the grid column width */
+    padding: 10px 15px; /* Slight padding on both sides */
+    
+    box-shadow: none; /* Remove shadow */
+    border-radius: 0; /* No rounded corners */
+    font-size: 1rem;
+    background-color: #fff; /* White background for input fields */
+    margin: 0 auto; /* Center align if needed */
+}
+
+/* Button Styles */
+.btn-submit {
+    width: 100%; /* Full width of the parent container */
+    max-width: 400px; /* Adjust this to match the grid column width */
+    padding: 10px 15px; /* Slight padding on both sides */
+    background-color: #527b54; /* Blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* Remove shadow */
+    display: block; /* Block-level element for proper width */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+}
+
+
+
+.btn-submit:disabled {
+    background-color: #c0c0c0;
+}
+
+/* Form Output */
+.form-output {
+    margin-top: 20px;
+}

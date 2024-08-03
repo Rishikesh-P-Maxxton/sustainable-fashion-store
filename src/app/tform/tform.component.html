@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="jumbotron">
+    <p class="display-5">Sign Up!</p>
+  </div>
+  <div class="card  mb-3">
+    <form #f="ngForm" novalidate (ngSubmit)="save(f.value, f.form.valid)">
+      <div class="row">
+        <div class="col-md-5">
+          <!-- Name -->
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              [(ngModel)]="user.name"
+              #name="ngModel"
+              required
+              minlength="5"
+              placeholder="Name (minimum 5 characters)"
+              class="form-control"
+            />
+            <small [hidden]="name.valid || (name.pristine && !f.submitted)" class="error-message">
+              Name is required (minimum 5 characters).
+            </small>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="user.email"
+              #email="ngModel"
+              required
+              email
+              placeholder="Email"
+              class="form-control"
+            />
+            <small [hidden]="email.valid || (email.pristine && !f.submitted)" class="error-message">
+              A valid email is required.
+            </small>
+          </div>
+
+          <!-- Address Group -->
+          <div ngModelGroup="address">
+            <!-- Street -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="street"
+                [(ngModel)]="user.address.street"
+                #street="ngModel"
+                required
+                placeholder="Street"
+                class="form-control"
+              />
+              <small [hidden]="street.valid || (street.pristine && !f.submitted)" class="error-message">
+                Street is required.
+              </small>
+            </div>
+
+            <!-- Postcode -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="postcode"
+                [(ngModel)]="user.address.postcode"
+                placeholder="Post code"
+                class="form-control"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-start mt-3">
+              <button class="btn-submit mb-3" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Display the form data in JSON format -->
+    <div class="form-output mt-3">
+      <h3 class="fw-bold">Form Data (JSON):</h3>
+      <pre>{{ f.value | json }}</pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+/* Fixes for card and image appearance */
+/* .card {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none; /* Removes shadow for a completely minimalist look 
+    padding-top: 5rem;
+  } */
+
+
+  
+  .card-img-top {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 0; /* Corrected from 'o' to '0' */
+  }
+  
+  .card-body {
+    padding: 0;
+    border-radius: 0%;
+    text-align: center; /* Center-align text in the card body */
+  }
+  
+  .card-title {
+    font-family: Arial, sans-serif;
+    margin-top: 1.2em ; /* Space between image and title */
+  }
+  
+  .card-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem; /* Adjust size as needed */
+    color: #6c757d; /* Optional: Light grey color for the subtitle */
+    margin: 0; /* No extra margin */
+  }
+  
+ 
+
+  .card-deck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0;
+  }
+  
+  .card {
+    width: 32%; /* Adjust width as needed */
+    margin-bottom: 1rem; /* Space between rows */
+    border-radius: 0;
+
+    border: none;
+    
+    margin-right: 0rem; /* Reduce space between columns (if needed) */
+    border-radius: 0;
+    
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 767.98px) {
+    .card-deck {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-align cards horizontally */
+    }
+  
+    .card {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 1rem; /* Space between cards */
+    }
+  }
+  
+
+  /* Jumbotron */
+
+  .jumbotron {
+    /* padding-top: 7rem;
+    padding-bottom: 12rem; */
+    padding-top: 4rem;
+    padding-bottom: 4rem;/* Padding for the jumbotron */
+    text-align: center; /* Center-align text */
+  }
+  
+
+
+
+.lead {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300; /* Light weight */
+    font-size: .7rem; /* Adjust as needed */
+    color: #333; /* Dark color for better readability */
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 5px; /* Space for the underline */
+  }
+  
+  .lead::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Light grey line */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .lead::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #333; /* Darker line */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth transition for the darker line */
+  }
+  
+  .lead:hover::after {
+    width: 100%;
+  }

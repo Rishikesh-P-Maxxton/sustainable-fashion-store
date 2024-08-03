@@ -1,0 +1,31 @@
+<div class="container-fluid cont">
+
+  <div class="container-fluid py-2">
+  <h2 class="display-6">Men</h2>
+  <div class="scroll-container-wrapper">
+    <div class="scroll-container">
+      <app-card-big *ngFor="let card of cards1">
+        <img [src]="card.imageUrl" alt="Product Image" cardImage>
+        <h5 class="card-title" cardTitle>{{ card.title }}</h5>
+        <p class="card-text" cardText>{{ card.text }}</p>
+      </app-card-big>
+    </div>
+  </div>
+</div>
+</div>
+<app-vid-banner></app-vid-banner>
+<app-jumbotron ></app-jumbotron>
+<div class="container-fluid cont">
+<div class="container-fluid py-2">
+  <h2 class="display-6">Women</h2>
+  <div class="scroll-container-wrapper">
+    <div class="scroll-container">
+      <app-card-big *ngFor="let card of cards2">
+        <img [src]="card.imageUrl" alt="Product Image" cardImage>
+        <h5 class="card-title" cardTitle>{{ card.title }}</h5>
+        <p class="card-text" cardText>{{ card.text }}</p>
+      </app-card-big>
+    </div>
+  </div>
+</div>
+</div>

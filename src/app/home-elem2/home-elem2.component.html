@@ -1,0 +1,17 @@
+
+<div class="jumbotron text-left ">
+    <h4 class="display-6">Exos Services</h4>
+    <p class="lead">Exos offers complementary wrapping on all orders.</p>
+  </div>
+<section class="container">
+    <div class="card-deck">
+    <div class="card" *ngFor="let item of items">
+      <img [src]="item.image" class="card-img-top" [alt]="item.title">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <h6 class="card-subtitle">{{ item.subtitle }}</h6>
+      </div>
+    </div>
+  </div>
+  
+</section>
